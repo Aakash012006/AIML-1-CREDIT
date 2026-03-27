@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aakash S — AI & Full Stack Developer. Building AI-powered systems that solve real-world problems." />
+  <title>Aakash S · AI & Full Stack Developer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ═══ CURSOR ═══════════════════════════════════════════════ -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ═══ PROGRESS BAR ════════════════════════════════════════ -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ═══ NAVBAR ══════════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>Aakash<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#vision" class="nav-link">Vision</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO ═════════════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span>Available for Opportunities</span>
+      </div>
+
+      <h1 class="hero-headline">
+        I build
+        <span class="headline-accent"> AI-powered systems</span>
+        <br />that solve real-world problems.
+      </h1>
+
+      <div class="typewriter-wrap">
+        <span class="typewriter-arrow">→</span>
+        <span class="typewriter-text" id="typewriterText"></span>
+        <span class="typewriter-cursor">|</span>
+      </div>
+
+      <p class="hero-sub">
+        AI & Full Stack Developer from India. I don't just write code — I think
+        in products, build with purpose, and design systems that scale.
+        Currently obsessed with AI for supply chain optimization.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">
+          View Projects <span class="btn-arrow">→</span>
+        </a>
+        <a href="#contact" class="btn btn-ghost">Contact Me</a>
+      </div>
+
+      <div class="hero-meta">
+        <span class="meta-item">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          India
+        </span>
+        <span class="meta-divider"></span>
+        <span class="meta-item">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          BE CSE (AI & ML)
+        </span>
+        <span class="meta-divider"></span>
+        <span class="meta-item">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          AI Engineer
+        </span>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══ ABOUT ════════════════════════════════════════════════ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-label reveal">
+        <span class="label-line"></span>
+        <span>About Me</span>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <h2 class="section-heading">
+            I don't wait for AI to be mainstream.
+            <span class="text-accent"> I build it now.</span>
+          </h2>
+          <p>
+            I'm Aakash — an AI & Full Stack developer pursuing BE in CSE with a
+            specialization in AI & ML. But the degree is just the backdrop. The
+            real work happens debugging a model that should work but doesn't, or
+            prototyping a product idea that hit me at 2 AM.
+          </p>
+          <p>
+            My interest isn't academic AI — it's <strong>applied AI</strong>. Systems that
+            make measurable differences: logistics that predict demand before it
+            spikes, dashboards that make inventory invisible, automation that
+            removes the boring so humans can do the important.
+          </p>
+          <p>
+            I think like a founder: what's the problem, who has it, and what's the
+            simplest technically-sound thing I can ship to validate the hypothesis?
+          </p>
+        </div>
+
+        <div class="about-stats reveal">
+          <div class="stat-card">
+            <div class="stat-icon" style="--icon-color: #00ff9d">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <div class="stat-value">10+</div>
+            <div class="stat-label">Projects Shipped</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon" style="--icon-color: #a855f7">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96-.46 2.5 2.5 0 0 1-1.04-4.79A2.5 2.5 0 0 1 7.5 9.5 2.5 2.5 0 0 1 9.5 2Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96-.46 2.5 2.5 0 0 0 1.04-4.79A2.5 2.5 0 0 0 16.5 9.5 2.5 2.5 0 0 0 14.5 2Z"/></svg>
+            </div>
+            <div class="stat-value">5+</div>
+            <div class="stat-label">ML Models Built</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon" style="--icon-color: #00c8ff">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <div class="stat-value">Full</div>
+            <div class="stat-label">Stack Depth</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon" style="--icon-color: #f59e0b">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+            </div>
+            <div class="stat-value">AI</div>
+            <div class="stat-label">Supply Chain Focus</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SKILLS ═══════════════════════════════════════════════ -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-label reveal">
+        <span class="label-line"></span>
+        <span>Skills</span>
+      </div>
+      <h2 class="section-heading reveal">My Technical Arsenal</h2>
+
+      <div class="skills-grid">
+
+        <div class="skill-card reveal" style="--card-accent: #00ff9d">
+          <div class="skill-card-header">
+            <div class="skill-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3>Programming</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span>Python</span><span class="skill-pct">88%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="88" style="--bar-color: #00ff9d"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span>Java</span><span class="skill-pct">78%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="78" style="--bar-color: #00ff9d"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span>C</span><span class="skill-pct">72%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="72" style="--bar-color: #00ff9d"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal" style="--card-accent: #00c8ff">
+          <div class="skill-card-header">
+            <div class="skill-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3>Web Development</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span>React</span><span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="85" style="--bar-color: #00c8ff"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span>Node.js</span><span class="skill-pct">80%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="80" style="--bar-color: #00c8ff"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span>REST APIs</span><span class="skill-pct">82%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="82" style="--bar-color: #00c8ff"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal" style="--card-accent: #a855f7">
+          <div class="skill-card-header">
+            <div class="skill-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96-.46 2.5 2.5 0 0 1-1.04-4.79A2.5 2.5 0 0 1 7.5 9.5 2.5 2.5 0 0 1 9.5 2Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96-.46 2.5 2.5 0 0 0 1.04-4.79A2.5 2.5 0 0 0 16.5 9.5 2.5 2.5 0 0 0 14.5 2Z"/></svg>
+            </div>
+            <h3>AI / ML</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span>Machine Learning</span><span class="skill-pct">80%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="80" style="--bar-color: #a855f7"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span>Data Handling</span><span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="85" style="--bar-color: #a855f7"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span>Model Deployment</span><span class="skill-pct">70%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="70" style="--bar-color: #a855f7"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PROJECTS ═════════════════════════════════════════════ -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-label reveal">
+        <span class="label-line"></span>
+        <span>Projects</span>
+      </div>
+      <h2 class="section-heading reveal">Things I've Actually Built</h2>
+      <p class="section-sub reveal">Not tutorial clones. Real problems, real decisions, real trade-offs.</p>
+
+      <div class="projects-grid">
+
+        <div class="project-card reveal featured" style="--p-accent: #a855f7">
+          <div class="project-card-top">
+            <div class="project-tag" style="--tag-color: #a855f7">AI System</div>
+            <div class="project-icon" style="--icon-bg: #a855f7">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+            </div>
+          </div>
+          <h3 class="project-title">ChainMind — Supply Chain AI</h3>
+          <div class="project-detail">
+            <div class="detail-label" style="color: #a855f7">Problem</div>
+            <p>Global supply chains lose billions annually to demand misforecasting, invisible bottlenecks, and reactive decision-making.</p>
+          </div>
+          <div class="project-detail">
+            <div class="detail-label" style="color: #00c8ff">Solution</div>
+            <p>ML pipeline that ingests historical shipment data, applies time-series forecasting, and surfaces anomaly alerts on a live dashboard.</p>
+          </div>
+          <div class="project-detail">
+            <div class="detail-label" style="color: #00ff9d">Impact</div>
+            <p>Simulated 23% reduction in overstock scenarios. Presented as capstone AI project.</p>
+          </div>
+          <div class="project-stack">
+            <span>Python</span><span>scikit-learn</span><span>React</span><span>Node.js</span><span>Chart.js</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal" style="--p-accent: #00c8ff">
+          <div class="project-card-top">
+            <div class="project-tag" style="--tag-color: #00c8ff">Full Stack</div>
+            <div class="project-icon" style="--icon-bg: #00c8ff">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+          </div>
+          <h3 class="project-title">DevCollab — Real-Time Code Review</h3>
+          <div class="project-detail">
+            <div class="detail-label" style="color: #00c8ff">Problem</div>
+            <p>Async code reviews are slow, lose context, and kill team velocity — especially for distributed teams.</p>
+          </div>
+          <div class="project-detail">
+            <div class="detail-label" style="color: #00c8ff">Solution</div>
+            <p>Full-stack app with live collaborative editing, threaded comments anchored to code lines, and GitHub webhook integration.</p>
+          </div>
+          <div class="project-detail">
+            <div class="detail-label" style="color: #00ff9d">Impact</div>
+            <p>Used by a 6-person team during a hackathon — cut review cycle from 2 hrs to 25 min.</p>
+          </div>
+          <div class="project-stack">
+            <span>React</span><span>Node.js</span><span>Socket.io</span><span>MongoDB</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal" style="--p-accent: #00ff9d">
+          <div class="project-card-top">
+            <div class="project-tag" style="--tag-color: #00ff9d">Automation</div>
+            <div class="project-icon" style="--icon-bg: #00ff9d">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+          </div>
+          <h3 class="project-title">AutoGrade — AI Assignment Evaluator</h3>
+          <div class="project-detail">
+            <div class="detail-label" style="color: #00ff9d">Problem</div>
+            <p>Manual grading of subjective assignments is inconsistent and time-consuming for educators handling large batches.</p>
+          </div>
+          <div class="project-detail">
+            <div class="detail-label" style="color: #00ff9d">Solution</div>
+            <p>NLP-powered grading tool that parses student submissions, scores against a rubric using cosine similarity + keyword extraction.</p>
+          </div>
+          <div class="project-detail">
+            <div class="detail-label" style="color: #00ff9d">Impact</div>
+            <p>Graded 200+ assignments in a test run with ~89% agreement rate with human evaluators.</p>
+          </div>
+          <div class="project-stack">
+            <span>Python</span><span>NLTK</span><span>Flask</span><span>React</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal" style="--p-accent: #f59e0b">
+          <div class="project-card-top">
+            <div class="project-tag" style="--tag-color: #f59e0b">Data Engineering</div>
+            <div class="project-icon" style="--icon-bg: #f59e0b">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            </div>
+          </div>
+          <h3 class="project-title">PulseBoard — Inventory Intelligence</h3>
+          <div class="project-detail">
+            <div class="detail-label" style="color: #f59e0b">Problem</div>
+            <p>Small warehouses use spreadsheets. No real-time visibility, no trend alerts, no automated reorder logic.</p>
+          </div>
+          <div class="project-detail">
+            <div class="detail-label" style="color: #f59e0b">Solution</div>
+            <p>Full-stack dashboard with automated reorder triggers, stock velocity graphs, and a Python script that ingests CSV exports from any POS system.</p>
+          </div>
+          <div class="project-detail">
+            <div class="detail-label" style="color: #00ff9d">Impact</div>
+            <p>Deployed for a local retail client — eliminated 3 manual stockouts per month.</p>
+          </div>
+          <div class="project-stack">
+            <span>React</span><span>Node.js</span><span>Python</span><span>SQLite</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ VISION ═══════════════════════════════════════════════ -->
+  <section class="section section-alt" id="vision">
+    <div class="container">
+      <div class="section-label reveal">
+        <span class="label-line"></span>
+        <span>Startup Vision</span>
+      </div>
+      <h2 class="section-heading reveal">What I'm Building Toward</h2>
+
+      <div class="vision-card reveal">
+        <div class="vision-card-header">
+          <div class="vision-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+          </div>
+          <span>AI-Native Supply Chain OS</span>
+        </div>
+        <p>
+          Global supply chain is a $19 trillion industry running on spreadsheets, gut feelings,
+          and outdated ERP systems. When a ship gets stuck in the Suez Canal, companies find out
+          on the news — not from their own systems.
+        </p>
+        <p>
+          I'm building toward a platform that treats supply chain as a <em>living graph</em>:
+          where every node (supplier, warehouse, route) has an AI agent watching it, every edge
+          has a risk score, and the whole thing surfaces <strong>decisions — not dashboards</strong> — to
+          the humans who need to act.
+        </p>
+        <p>
+          The thesis: <strong class="text-accent">predictive over reactive</strong>.
+          Small and mid-market companies should have the same supply chain intelligence that Amazon has.
+          Starting with demand forecasting + anomaly detection — where the bleeding is most visible.
+        </p>
+      </div>
+
+      <div class="phases-grid">
+        <div class="phase-card reveal" style="--phase-color: #00ff9d">
+          <div class="phase-label">Phase 1</div>
+          <div class="phase-title">Demand Forecasting Engine</div>
+          <div class="phase-status">In Progress</div>
+        </div>
+        <div class="phase-card reveal" style="--phase-color: #00c8ff">
+          <div class="phase-label">Phase 2</div>
+          <div class="phase-title">Supplier Risk Scoring</div>
+          <div class="phase-status">Planned</div>
+        </div>
+        <div class="phase-card reveal" style="--phase-color: #a855f7">
+          <div class="phase-label">Phase 3</div>
+          <div class="phase-title">Autonomous Reorder Agents</div>
+          <div class="phase-status">Vision</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT ══════════════════════════════════════════════ -->
+  <section class="section" id="contact">
+  <div class="container">
+    <div class="section-label reveal">
+      <span class="label-line"></span>
+      <span>Contact</span>
+    </div>
+
+    <h2 class="section-heading reveal">
+      Let's build something
+      <span class="text-accent"> worth building.</span>
+    </h2>
+
+    <p class="section-sub reveal">
+      Direct reach is better than forms. If you’re serious, contact me here.
+    </p>
+
+    <div class="contact-grid">
+
+      <!-- REAL CONTACT LINKS -->
+      <div class="contact-links reveal">
+
+        <a href="mailto:aakasaakash420j@gmail.com" class="contact-link">
+          <div class="contact-link-icon" style="--link-color: #00ff9d">📧</div>
+          <div>
+            <div class="contact-link-type">Email</div>
+            <div class="contact-link-value">aakasaakash420j@gmail.com</div>
+          </div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/aakash-s-a5375429a/" target="_blank" class="contact-link">
+          <div class="contact-link-icon" style="--link-color: #00c8ff">🔗</div>
+          <div>
+            <div class="contact-link-type">LinkedIn</div>
+            <div class="contact-link-value">/aakash-s-a5375429a</div>
+          </div>
+        </a>
+
+        <a href="https://github.com/Aakash012006" target="_blank" class="contact-link">
+          <div class="contact-link-icon" style="--link-color: #a855f7">💻</div>
+          <div>
+            <div class="contact-link-type">GitHub</div>
+            <div class="contact-link-value">Aakash012006</div>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- ═══ FOOTER ═══════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="contact-links reveal">
+  <a href="mailto:aakasaakash420j@gmail.com" class="contact-link">
+    <div class="contact-link-icon" style="--link-color: #00ff9d">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+        <polyline points="22,6 12,13 2,6"/>
+      </svg>
+    </div>
+    <div>
+      <div class="contact-link-type">Email</div>
+      <div class="contact-link-value">aakasaakash420j@gmail.com</div>
+    </div>
+    <svg class="contact-link-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+      <polyline points="15 3 21 3 21 9"/>
+      <line x1="10" y1="14" x2="21" y2="3"/>
+    </svg>
+  </a>
+
+  <a href="https://www.linkedin.com/in/aakash-s-a5375429a/" target="_blank" rel="noopener" class="contact-link">
+    <div class="contact-link-icon" style="--link-color: #00c8ff">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+        <rect x="2" y="9" width="4" height="12"/>
+        <circle cx="4" cy="4" r="2"/>
+      </svg>
+    </div>
+    <div>
+      <div class="contact-link-type">LinkedIn</div>
+      <div class="contact-link-value">/in/aakash-s-a5375429a</div>
+    </div>
+    <svg class="contact-link-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+      <polyline points="15 3 21 3 21 9"/>
+      <line x1="10" y1="14" x2="21" y2="3"/>
+    </svg>
+  </a>
+
+  <a href="https://github.com/Aakash012006" target="_blank" rel="noopener" class="contact-link">
+    <div class="contact-link-icon" style="--link-color: #a855f7">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+      </svg>
+    </div>
+    <div>
+      <div class="contact-link-type">GitHub</div>
+      <div class="contact-link-value">github.com/Aakash012006</div>
+    </div>
+    <svg class="contact-link-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+      <polyline points="15 3 21 3 21 9"/>
+      <line x1="10" y1="14" x2="21" y2="3"/>
+    </svg>
+  </a>
+</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
